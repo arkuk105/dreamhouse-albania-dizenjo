@@ -23,21 +23,16 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/sherbimet-projektet" element={<ServicesProjectsCalculator />} />
-          <Route path="/blog-mobilje" element={<BlogFurniture />} />
-          <Route path="/rreth-nesh-kontakt" element={<AboutContact />} />
+          <Route path="/sherbimet" element={<ServicesProjectsCalculator />} />
+          <Route path="/projektet" element={<ServicesProjectsCalculator />} />
+          <Route path="/kalkulator" element={<ServicesProjectsCalculator />} />
+          <Route path="/blog" element={<BlogFurniture />} />
+          <Route path="/mobilje-te-vogla" element={<BlogFurniture />} />
+          <Route path="/rreth-nesh" element={<AboutContact />} />
+          <Route path="/kontakt" element={<AboutContact />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
-
-          {/* Legacy routes for redirection */}
-          <Route path="/sherbimet" element={<ServicesProjectsCalculator />} />
-          <Route path="/rreth-nesh" element={<AboutContact />} />
-          <Route path="/kontakt" element={<AboutContact />} />
-          <Route path="/kalkulator" element={<ServicesProjectsCalculator />} />
-          <Route path="/mobilje-te-vogla" element={<BlogFurniture />} />
-          <Route path="/projektet" element={<ServicesProjectsCalculator />} />
-          <Route path="/blog" element={<BlogFurniture />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

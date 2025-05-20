@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Home, Menu, X } from 'lucide-react';
+import { Home, Menu, X, LogIn } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +13,12 @@ const Navbar = () => {
 
   const navLinks = [
     { title: 'Faqja Kryesore', path: '/' },
-    { title: 'Shërbimet & Projektet', path: '/sherbimet-projektet' },
-    { title: 'Blog & Mobilje', path: '/blog-mobilje' },
-    { title: 'Rreth Nesh & Kontakt', path: '/rreth-nesh-kontakt' },
-    { title: 'Admin', path: '/admin' }
+    { title: 'Shërbimet', path: '/sherbimet' },
+    { title: 'Projektet', path: '/projektet' },
+    { title: 'Blog', path: '/blog' },
+    { title: 'Mobilje të Vogla', path: '/mobilje-te-vogla' },
+    { title: 'Rreth Nesh', path: '/rreth-nesh' },
+    { title: 'Kontakt', path: '/kontakt' },
   ];
 
   return (
@@ -53,6 +55,18 @@ const Navbar = () => {
               {link.title}
             </NavLink>
           ))}
+          <NavLink
+            to="/admin"
+            className={({ isActive }) => 
+              isActive 
+                ? "font-medium text-furniture-forest border-b-2 border-furniture-forest pb-1" 
+                : "text-gray-600 hover:text-furniture-navy transition-colors"
+            }
+            aria-label="Admin Panel"
+            title="Admin Panel"
+          >
+            <LogIn className="w-5 h-5" />
+          </NavLink>
         </div>
       </div>
 
@@ -72,6 +86,15 @@ const Navbar = () => {
                 {link.title}
               </NavLink>
             ))}
+            <NavLink
+              to="/admin"
+              className={({ isActive }) => 
+                `block py-3 flex items-center ${isActive ? "font-medium text-furniture-forest" : "text-gray-600"}`
+              }
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <LogIn className="w-5 h-5 mr-2" /> Admin Panel
+            </NavLink>
           </div>
         </div>
       )}
