@@ -10,7 +10,6 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Calculator from "./pages/Calculator";
-import SmallFurniture from "./pages/SmallFurniture";
 
 const queryClient = new QueryClient();
 
@@ -26,7 +25,6 @@ const App = () => (
           <Route path="/rreth-nesh" element={<About />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/kalkulator" element={<Calculator />} />
-          <Route path="/mobilje-te-vogla" element={<SmallFurniture />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
