@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Separator } from '@/components/ui/separator';
 import { toast } from '@/hooks/use-toast';
-import { FileText, Image, MessageSquare, Pencil } from 'lucide-react';
+import { BookOpen, FileText, Image, MessageSquare, Pencil } from 'lucide-react';
 
 // This would normally be connected to a real API
 const generateArticleWithAI = async (topic: string, keywords: string) => {
