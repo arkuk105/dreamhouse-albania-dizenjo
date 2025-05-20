@@ -15,6 +15,8 @@ const Navbar = () => {
     { title: 'Faqja Kryesore', path: '/' },
     { title: 'Shërbimet', path: '/sherbimet' },
     { title: 'Mobilje të Vogla', path: '/mobilje-te-vogla' },
+    { title: 'Projektet', path: '/projektet' },
+    { title: 'Blog', path: '/blog' },
     { title: 'Rreth Nesh', path: '/rreth-nesh' },
     { title: 'Na Kontaktoni', path: '/kontakt' },
     { title: 'Kalkulator Kostoje', path: '/kalkulator' }
