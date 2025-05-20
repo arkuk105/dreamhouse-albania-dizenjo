@@ -19,9 +19,9 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Shërbimet Tona</h3>
             <ul className="space-y-2">
-              <li><NavLink to="/sherbimet#kuzhina" className="text-gray-300 hover:text-white transition-colors">Kuzhina moderne</NavLink></li>
-              <li><NavLink to="/sherbimet#dhoma-ndenjeje" className="text-gray-300 hover:text-white transition-colors">Mobilje për dhoma ndenjeje</NavLink></li>
-              <li><NavLink to="/sherbimet#dhoma-gjumi" className="text-gray-300 hover:text-white transition-colors">Mobilje për dhoma gjumi</NavLink></li>
+              <li><NavLink to="/sherbimet-projektet" className="text-gray-300 hover:text-white transition-colors">Kuzhina moderne</NavLink></li>
+              <li><NavLink to="/sherbimet-projektet" className="text-gray-300 hover:text-white transition-colors">Mobilje për dhoma ndenjeje</NavLink></li>
+              <li><NavLink to="/sherbimet-projektet" className="text-gray-300 hover:text-white transition-colors">Mobilje për dhoma gjumi</NavLink></li>
             </ul>
           </div>
           
@@ -39,8 +39,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">&copy; {year} DreamHouse. Të gjitha të drejtat e rezervuara.</p>
             <div className="flex space-x-4">
-              <NavLink to="/privatesia" className="text-gray-400 hover:text-white transition-colors">Politika e Privatësisë</NavLink>
-              <NavLink to="/kushtet" className="text-gray-400 hover:text-white transition-colors">Kushtet e Përdorimit</NavLink>
+              <NavLink to="/rreth-nesh-kontakt" className="text-gray-400 hover:text-white transition-colors">Privatësia</NavLink>
+              <NavLink to="/rreth-nesh-kontakt" className="text-gray-400 hover:text-white transition-colors">Kushtet</NavLink>
             </div>
           </div>
         </div>

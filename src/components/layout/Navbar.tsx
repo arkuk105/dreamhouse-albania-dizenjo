@@ -13,13 +13,10 @@ const Navbar = () => {
 
   const navLinks = [
     { title: 'Faqja Kryesore', path: '/' },
-    { title: 'Shërbimet', path: '/sherbimet' },
-    { title: 'Mobilje të Vogla', path: '/mobilje-te-vogla' },
-    { title: 'Projektet', path: '/projektet' },
-    { title: 'Blog', path: '/blog' },
-    { title: 'Rreth Nesh', path: '/rreth-nesh' },
-    { title: 'Na Kontaktoni', path: '/kontakt' },
-    { title: 'Kalkulator Kostoje', path: '/kalkulator' }
+    { title: 'Shërbimet & Projektet', path: '/sherbimet-projektet' },
+    { title: 'Blog & Mobilje', path: '/blog-mobilje' },
+    { title: 'Rreth Nesh & Kontakt', path: '/rreth-nesh-kontakt' },
+    { title: 'Admin', path: '/admin' }
   ];
 
   return (
