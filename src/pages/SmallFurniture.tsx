@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
@@ -7,7 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { Table, Chair, Armchair, Sofa, Image, Ruler, Plus, ChevronDown } from 'lucide-react';
+import { Table, Armchair, Sofa, Image, Ruler, Plus, ChevronDown } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 
 const SmallFurniture = () => {
@@ -21,7 +20,7 @@ const SmallFurniture = () => {
 
   const furnitureTypes = [
     { id: 'table', name: 'Tavolinë e Vogël', icon: Table, description: 'Tavolinë dekorative për ambiente të vogla' },
-    { id: 'chair', name: 'Karrige', icon: Chair, description: 'Karrige moderne për kënde leximi ose tavolina pune' },
+    { id: 'sofa-small', name: 'Divan i Vogël', icon: Sofa, description: 'Divan i vogël për hapësira të kufizuara' },
     { id: 'armchair', name: 'Kolltuk Individual', icon: Armchair, description: 'Kolltuk i vogël për hapësira të kufizuara' },
     { id: 'sofa', name: 'Divan', icon: Sofa, description: 'Divan për ambiente kompakte' }
   ];
