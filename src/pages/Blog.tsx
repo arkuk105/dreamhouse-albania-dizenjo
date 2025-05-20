@@ -5,7 +5,7 @@ import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { book, bookOpen, fileText } from 'lucide-react';
+import { Book, BookOpen, FileText } from 'lucide-react';
 
 // Sample blog data - in a real app, this would come from an API or database
 const blogPosts = [
@@ -18,7 +18,7 @@ const blogPosts = [
     author: 'Ervis Doda',
     date: '20 Maj 2023',
     image: 'https://images.unsplash.com/photo-1580130732478-4e339fb6836f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
-    icon: fileText,
+    icon: FileText,
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const blogPosts = [
     author: 'Elidon Gjuni',
     date: '12 Qershor 2023',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-    icon: book,
+    icon: Book,
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const blogPosts = [
     author: 'Ervis Doda',
     date: '3 Korrik 2023',
     image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-    icon: bookOpen,
+    icon: BookOpen,
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const blogPosts = [
     author: 'Elidon Gjuni',
     date: '25 Gusht 2023',
     image: 'https://images.unsplash.com/photo-1616486701797-0f33f61038ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80',
-    icon: fileText,
+    icon: FileText,
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const blogPosts = [
     author: 'Ervis Doda',
     date: '10 Shtator 2023',
     image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80',
-    icon: book,
+    icon: Book,
   },
 ];
 

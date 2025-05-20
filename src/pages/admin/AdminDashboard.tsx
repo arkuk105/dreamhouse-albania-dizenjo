@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -9,7 +8,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Separator } from '@/components/ui/separator';
 import { toast } from '@/hooks/use-toast';
-import { bookOpen, fileText, image, messageSquare, pencil } from 'lucide-react';
+import { FileText, Image, MessageSquare, Pencil } from 'lucide-react';
 
 // This would normally be connected to a real API
 const generateArticleWithAI = async (topic: string, keywords: string) => {
@@ -254,19 +253,19 @@ const AdminDashboard = () => {
         </div>
         <nav className="mt-6">
           <a href="#dashboard" className="flex items-center px-6 py-3 bg-gray-100 text-furniture-forest">
-            <fileText className="h-5 w-5 mr-3" />
+            <FileText className="h-5 w-5 mr-3" />
             <span>Artikuj</span>
           </a>
           <a href="#projects" className="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
-            <image className="h-5 w-5 mr-3" />
+            <Image className="h-5 w-5 mr-3" />
             <span>Projektet</span>
           </a>
           <a href="#messages" className="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
-            <messageSquare className="h-5 w-5 mr-3" />
+            <MessageSquare className="h-5 w-5 mr-3" />
             <span>Mesazhe</span>
           </a>
           <a href="#settings" className="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
-            <pencil className="h-5 w-5 mr-3" />
+            <Pencil className="h-5 w-5 mr-3" />
             <span>Cilësime</span>
           </a>
         </nav>
@@ -287,15 +286,15 @@ const AdminDashboard = () => {
           <Tabs defaultValue="articles">
             <TabsList className="mb-8 w-full justify-start">
               <TabsTrigger value="articles" className="flex items-center">
-                <fileText className="h-4 w-4 mr-2" />
+                <FileText className="h-4 w-4 mr-2" />
                 <span>Artikujt</span>
               </TabsTrigger>
               <TabsTrigger value="create">
-                <pencil className="h-4 w-4 mr-2" />
+                <Pencil className="h-4 w-4 mr-2" />
                 <span>Krijo Artikull</span>
               </TabsTrigger>
               <TabsTrigger value="ai">
-                <bookOpen className="h-4 w-4 mr-2" />
+                <BookOpen className="h-4 w-4 mr-2" />
                 <span>Gjenerator AI</span>
               </TabsTrigger>
             </TabsList>
